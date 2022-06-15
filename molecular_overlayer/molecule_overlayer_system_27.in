@@ -1,0 +1,45 @@
+&control    
+calculation='scf'    
+restart_mode='from_scratch',    
+pseudo_dir='/deac/thonhauserGrp/chakrad/calculations/atomandmolecule-qe6.2.1-i2012-C6modif/all_pbe_UPF_v1.5'    
+prefix='benzene_27'    
+disk_io='none'    
+forc_conv_thr=3d-3    
+/    
+&system    
+ibrav=0    
+nat = 12  
+ntyp= 2   
+occupations = fixed  
+ecutwfc = 50  
+ecutrho = 600  
+nosym = .true.  
+input_dft = 'vdw-df'  
+/    
+&electrons    
+conv_thr = 1.0d-8  
+/    
+ATOMIC_SPECIES    
+C 1.0 c_pbe_v1.2.uspp.F.UPF  
+H 1.0 h_pbe_v1.4.uspp.F.UPF  
+    
+CELL_PARAMETERS angstrom   
+7.8348845569031900 0.0000000000000000 0.0000000000000000  
+3.9174422784515901 6.7852090619965404 0.0000000000000000  
+0.0000000000000000 0.0000000000000000 28.6619274211248189  
+ATOMIC_POSITIONS angstrom   
+C 5.14548728 3.10252244 15.25098519 
+C 3.95379145 2.37252177 15.25098468 
+C 2.72573692 3.03954085 15.25098511 
+C 2.68939728 4.43660513 15.25098519 
+C 3.88109310 5.16660580 15.25098468 
+C 5.10914763 4.49958672 15.25098511 
+H 6.10334275 2.58211587 15.25159811 
+H 3.98214815 1.28277705 15.25159845 
+H 1.79624431 2.47000752 15.25159812 
+H 1.73154181 4.95701170 15.25159811 
+H 3.85273640 6.25635051 15.25159845 
+H 6.03864025 5.06912005 15.25159812 
+    
+K_POINTS automatic   
+1 1 1 0 0 0
